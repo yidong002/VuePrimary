@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item,index in words" v-bind:key="index">
+                {{index}}:{{item.text}}
+            </li>
+        </ul>
+        
+          
+    </div>
+</body>
+<script>
+    // 实例化Vue
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            words:[
+                {text:"半江春水半江红"},
+                {text:"一弦一柱思华年"},
+                {text:"大猪小猪落玉盘"}
+            ]
+            
+        }
+    })
+</script>
+</html>

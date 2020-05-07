@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 导入Vue依赖库 -->
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="btnClick">点击</button>
+        <img v-bind:src="src" id="img">
+    </div>
+    
+</body>
+<script>
+    let vm=new Vue({
+        el:"#app",
+        data:{
+            src:""
+        },
+        methods:{
+            btnClick:function(){
+                //alert('点击了按钮')
+                this.src="http://img3.cache.netease.com/photo/0026/2016-09-22/C1J71ODR3ONH0026.jpg"
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <!-- <div class ="app"> -->
+    <div id="app">
+        <span v-bind:title="title">标题</span>
+    </div>
+</body>
+<script>
+    let vm=new Vue({
+        el:"#app",
+        // el:".app",
+        data:{
+            title:"不做标题党，爱护网络环境"
+        }
+    })
+</script>
+</html>

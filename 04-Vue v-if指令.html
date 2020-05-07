@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入Vue依赖 -->
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-if="condition">{{message}}</p>
+        <p v-show="condition">{{message}}</p>
+    </div>
+</body>
+<script>
+    //实例化Vue
+    let vm=new Vue({
+        el:"#app",
+        data:{
+            condition:false,
+            message:"隐藏训练"
+        }
+    })
+</script>
+</html>
